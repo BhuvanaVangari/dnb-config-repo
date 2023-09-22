@@ -1,0 +1,4 @@
+config-server     8888
+discovery         8761
+Account service   9000
+customer service  9001
