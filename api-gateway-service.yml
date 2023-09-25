@@ -1,4 +1,15 @@
-
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: CUSTOMER-SERVICE
+          uri: lb://CUSTOMER-SERVICE
+          predicates:
+            - Path=/api/customer/**
+        - id: ACCOUNT-SERVICE
+          uri: lb://ACCOUNT-SERVICE
+          predicates:
+            - Path=/api/account/**
 server:
   port: 9191
   error:
@@ -13,4 +24,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: *
+        include: "*"
