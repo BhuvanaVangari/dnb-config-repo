@@ -19,7 +19,6 @@ server:
     include-message: always
 eureka:
   instance:
-    prefer-ip-address: true
     lease-renewal-interval-in-seconds: 30
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
