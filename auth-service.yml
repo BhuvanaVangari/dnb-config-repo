@@ -25,4 +25,4 @@ management:
 jwt:
   secret: mySecretKey
   expireMs: 1200
-  refrEshexpireMs: 1200
+  refreshExpireMs: 1200
